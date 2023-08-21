@@ -12,18 +12,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS Link Here -->
-    <link rel="stylesheet" href="./styles/style.css">
-
     <!-- Font Awesome Link Here -->
     <script src="https://kit.fontawesome.com/8c1b0929ce.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Link Here -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <header>
 
     </header>
-    <main>
+    <main class="gird justify-center items-center mx-20 my-10 bg-blue-300 rounded-lg">
+        <div class="p-6 px-36 rounded-lg">
+            <h1 class="text-3xl text-center font-bold mb-8">My Text Editor</h1>
+            <div class="border-2 border-black p-4 bg-blue-200">
+                <div class="flex justify-between pb-4">
+                    <di class="flex items-center">
+                        <i class="fa-solid fa-b cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                        <i class="fa-solid fa-italic cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                        <i class="fa-solid fa-underline cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                    </di>
+                    <div class="flex items-center ">
+                        <i class="fa-solid fa-align-left cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                        <i class="fa-solid fa-align-center cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                        <i class="fa-solid fa-align-left cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                        <i class="fa-solid fa-align-justify cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                    </div>
+                    <div class="flex items-center ">
+                        <input type="number" name="fontSize" id="fontSize"
+                            class="w-12 cursor-pointer focus:bg-blue-300 focus:outline-none mx-3">
+                        <i class="fa-solid fa-font cursor-pointer hover:bg-blue-300 p-3 rounded-lg"></i>
+                        <input type="color" name="fontColor" id="fontColor" class="w-10 h-7 cursor-pointer mx-3">
+                    </div>
+                </div>
+                <textarea name="textField" id="textField" cols="120" rows="15"
+                    class="w-full focus:outline-none p-4"></textarea>
+            </div>
+        </div>
 
     </main>
     <footer>
